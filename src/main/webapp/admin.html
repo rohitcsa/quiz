@@ -1,0 +1,265 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assessment Quiz</title>
+<meta name="author" content="Tanuj Dhaundiyal - Crosstab">
+
+<!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+<meta name="viewport" content="width=device-width">
+<!-- End SlidesJS Required -->
+
+<!-- CSS for slidesjs.com example -->
+<link rel="stylesheet" href="css/example.css">
+<!-- End CSS for slidesjs.com example -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/purple.css">
+
+<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+<link href="https://fonts.googleapis.com/css?family=Sintony:400,700"
+	rel="stylesheet">
+<style>
+/* For tablets & smart phones */
+@media ( max-width : 767px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.container {
+		width: auto
+	}
+}
+
+/* For smartphones */
+@media ( max-width : 480px) {
+	.container {
+		width: auto
+	}
+}
+
+/* For smaller displays like laptops */
+@media ( min-width : 768px) and (max-width: 979px) {
+	.container {
+		width: 724px
+	}
+}
+
+/* For larger displays */
+@media ( min-width : 1200px) {
+	.container {
+		width: 1170px
+	}
+}
+
+.email-button:active {
+	position: relative;
+	top: 6px;
+}
+
+.email-button {
+	box-shadow: 0px 6px #0f3a4d;
+	background: #2a677d;
+	width: 80px;
+	display: block;
+	border-radius: 3px;
+	padding: 12px 30px 12px 30px;
+}
+
+.email-button:active {
+	box-shadow: 0px 0px #23A33D;
+	background: #003b4f;
+}
+</style>
+<!-- SlidesJS Required: -->
+
+</head>
+<body style="font-family: 'Sintony', sans-serif;">
+	<!-- Start site navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<span class="brand pull-left" style="color: #fff;">&nbsp;&nbsp;&nbsp;Dashboard&nbsp;&nbsp;&nbsp;/&nbsp;&nbsp;&nbsp;Email
+					Quiz Link&nbsp;&nbsp;</span> <a href="#" class="brand pull-right"
+					style="color: #fff;"><i class='fa fa-sign-out'></i>&nbsp;&nbsp;</a>
+			</div>
+		</div>
+	</div>
+	<!-- End site navbar -->
+
+	<!-- SlidesJS Required: Start Slides -->
+	<!-- The container is used to define the width of the slideshow -->
+	<div class="container" style="background: #F0F0F0;">
+		<div>
+			<h1>&nbsp;&nbsp;&nbsp;Email Link to Candidate</h1>
+			<div style="width: 98.5%; padding-left: 8px; padding-right: 8px;">
+				<hr style="border-top: 1px dotted #8c8b8b;">
+			</div>
+		</div>
+		<div id="emailForm" style="background: #F0F0F0; width: 100%;">
+			<div style="text-align: center;">
+				<img src="img/email.png" width="120px" height="120px"
+					style="margin-top: 20px;"></img>
+				<p style="font-size: 20px; padding-top: 20px; padding-bottom: 20px;">Fill
+					out the details below and send the link to the quiz to the desired
+					candidate.</p>
+			</div>
+
+
+			<div class="form-group col-lg-12" align="center">
+				<div class="col-lg-4">
+					<div class="input-group">
+						<span class="input-group-addon"><i class="fa fa-user fa"
+							aria-hidden="true"></i></span> <input type="text" class="form-control"
+							name="name" id="name" placeholder="Candidate Name" />
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group col-lg-12" align="center">
+				<div class="col-lg-4">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="fa fa-envelope fa" aria-hidden="true"></i></span> <input
+							type="text" class="form-control" name="email" id="email"
+							placeholder="Candidate Email Address" />
+					</div>
+				</div>
+			</div>
+
+			<div class="form-group col-lg-12" align="center">
+				<div class="col-lg-4">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="fa fa-briefcase fa" aria-hidden="true"></i></span> <select
+							id="jobList" id="jobList" class="form-control">
+							<option value="">< Select Job Role ></option>
+							<option value="Software Engineer">Software Engineer</option>
+							<!-- <option value="opel">Sr. Section Engineer</option> -->
+							<option value="Technical Lead">Technical Lead</option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div class="form-group col-lg-12" align="center">
+				<div class="col-lg-4">
+					<div class="input-group">
+						<span class="input-group-addon"><i
+							class="fa fa-question-circle fa" aria-hidden="true"></i></span> <select
+							id="quizList" class="form-control" disabled="disabled">
+							<option value="">< Select Quiz Level ></option>
+						</select>
+					</div>
+				</div>
+			</div>
+			<div id="previewQuizDiv" class="form-group col-lg-12" align="center"
+				style="font-size: 14px; display: none;">
+				<div align="center">
+					<a class="preview-quiz" href="#" id="previewQuiz"
+						style="color: #2a677d"><i class="fa fa-eye"></i>&nbsp;Preview
+						Selected Quiz</a>
+				</div>
+			</div>
+			<div style="padding-top: 20px; padding-bottom: 30px;" align="center">
+				<a class="email-button" href="#" id="emailQuiz"
+					style="color: #ffffff;">Email Quiz</a>
+			</div>
+		</div>
+	</div>
+	<!-- End SlidesJS Required: Start Slides -->
+
+	<div id="footer" class="section"
+		style="right: 0; bottom: 0; left: 0; text-align: center;">
+		<div class="container">
+			<p>
+				<a href="http://www.crosstab.in" target="_blank">Crosstab IT
+					Consulting</a>. All rights reserved.
+			</p>
+		</div>
+	</div>
+
+	<!-- SlidesJS Required: Link to jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<!-- End SlidesJS Required -->
+
+	<!-- icheck -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+	<!-- End icheck -->
+
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script>
+		$(document)
+				.ready(
+						function() {
+
+							$('#jobList')
+									.on(
+											'change',
+											function(e) {
+												var optionSelected = $(
+														"option:selected", this);
+												var valueSelected = this.value;
+
+												if (valueSelected === '') {
+
+													$("#previewQuizDiv").hide();
+
+													$('#quizList').attr(
+															'disabled',
+															'disabled');
+
+													$('#quizList')
+															.empty()
+															.append(
+																	'<option selected="selected" value="">< Select Quiz Level ></option>');
+
+												} else if (valueSelected === 'Software Engineer') {
+
+													$("#previewQuizDiv").hide();
+
+													$('#quizList').removeAttr(
+															'disabled');
+
+													$('#quizList')
+															.empty()
+															.append(
+																	'<option selected="selected" value="">< Select Quiz Level ></option><option value="Software_Engineer_P2">Software Engineer - Level P2</option><option value="Software_Engineer_P3">Software Engineer - Level P3</option>');
+
+												} else if (valueSelected === 'Technical Lead') {
+
+													$("#previewQuizDiv").hide();
+
+													$('#quizList').removeAttr(
+															'disabled');
+
+													$('#quizList')
+															.empty()
+															.append(
+																	'<option selected="selected" value="">< Select Quiz Level ></option><option value="Technical_Lead_P4">Technical Lead - Level P4</option>');
+
+												}
+											});
+
+							$('#quizList').on(
+									'change',
+									function(e) {
+										var optionSelected = $(
+												"option:selected", this);
+										var valueSelected = this.value;
+
+										if (valueSelected === '') {
+											$("#previewQuizDiv").hide();
+										} else {
+											$("#previewQuizDiv").show();
+										}
+
+									});
+						});
+	</script>
+	<!-- End SlidesJS Required -->
+</body>
+</html>

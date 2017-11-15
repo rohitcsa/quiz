@@ -1,0 +1,907 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Assessment Quiz - Software Engineer | P2 Level</title>
+<meta name="author" content="Tanuj Dhaundiyal - Crosstab">
+
+<!-- SlidesJS Required (if responsive): Sets the page width to the device width. -->
+<meta name="viewport" content="width=device-width">
+<!-- End SlidesJS Required -->
+
+<!-- CSS for slidesjs.com example -->
+<link rel="stylesheet" href="css/example.css">
+<!-- End CSS for slidesjs.com example -->
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/skins/square/purple.css">
+
+<!-- SlidesJS Required: These styles are required if you'd like a responsive slideshow -->
+<link href="https://fonts.googleapis.com/css?family=Sintony:400,700"
+	rel="stylesheet">
+<style>
+/* Prevent the slideshow from flashing on load
+#slides {
+	display: none
+} 
+*/
+
+/* Center the slideshow */
+.container {
+	margin: 0 auto
+}
+
+/* Show active item in the pagination */
+.slidesjs-pagination .active {
+	color: red;
+}
+
+/* Media quires for a responsive layout */
+
+/* For tablets & smart phones */
+@media ( max-width : 767px) {
+	body {
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	.container {
+		width: auto
+	}
+}
+
+/* For smartphones */
+@media ( max-width : 480px) {
+	.container {
+		width: auto
+	}
+}
+
+/* For smaller displays like laptops */
+@media ( min-width : 768px) and (max-width: 979px) {
+	.container {
+		width: 724px
+	}
+}
+
+/* For larger displays */
+@media ( min-width : 1200px) {
+	.container {
+		width: 1170px
+	}
+}
+
+.quiz-button:active {
+	position: relative;
+	top: 6px;
+}
+
+.quiz-button {
+	box-shadow: 0px 6px #0f3a4d;
+	background: #2a677d;
+	width: 80px;
+	display: block;
+	border-radius: 3px;
+	padding: 12px 30px 12px 30px;
+}
+
+.quiz-button:active {
+	box-shadow: 0px 0px #23A33D;
+	background: #003b4f;
+}
+</style>
+<!-- SlidesJS Required: -->
+
+</head>
+<body style="font-family: 'Sintony', sans-serif;">
+	<!-- Start site navbar -->
+	<div class="navbar navbar-inverse navbar-fixed-top">
+		<div class="navbar-inner">
+			<div class="container">
+				<span class="brand pull-left" style="color: #fff;">&nbsp;&nbsp;&nbsp;Software
+					Engineer (Java)&nbsp;&nbsp;/&nbsp;&nbsp;Level
+					P2&nbsp;&nbsp;/&nbsp;&nbsp;Assessment Quiz</span> <span
+					class="brand pull-right" style="color: #fff;"><i
+					class='fa fa-hourglass'></i>&nbsp;&nbsp;&nbsp;<span id="timer">20:00</span>&nbsp;</span>
+			</div>
+		</div>
+	</div>
+	<!-- End site navbar -->
+
+	<!-- SlidesJS Required: Start Slides -->
+	<!-- The container is used to define the width of the slideshow -->
+	<div class="container">
+
+		<div id="quizBanner" align="center"
+			style="background: #F0F0F0; width: 100%; text-align: center;">
+			<img src="img/quiz.png" width="200px" height="200px"
+				style="margin-top: 30px;"></img>
+			<p style="font-size: 30px; padding-top: 30px;">
+				This is <b>Software Engineer (Java) Level P2 </b> Quiz.
+			</p>
+			<p style="font-size: 20px;">15
+				Questions&nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;20 Minutes</p>
+			<p style="font-size: 30px;">Please press the start button
+				whenever you're ready.</p>
+			<div style="padding-top: 20px; padding-bottom: 30px;" align="center">
+				<a class="quiz-button" href="#" id="startQuiz"
+					style="color: #ffffff;">Start Quiz</a>
+			</div>
+		</div>
+		<div id="quizContainer" style="display: none;">
+			<div id="slides">
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 1</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these packages contain
+							all the collection classes?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;java.lang</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;java.util</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;java.net</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;java.awt</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">1
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 2</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these is an incorrect
+							form of using method max() to obtain maximum element?</p>
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;max (collection c)</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;max (collection c
+									comparator comp)</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;max (comparator
+									comp)</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;max (list c)</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info  slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">2
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 3</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these method can convert
+							a object into a list?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;SetList()</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;ConvertList()</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;singletonList()</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;CopyList()</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">3
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 4</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these operator is used to
+							generate an instance of an exception than can be thrown by using
+							throw?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;new</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;malloc</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;alloc</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;thrown</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">4
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 5</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these class is not
+							related to input and output stream in terms of functioning?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;File</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Writer</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;InputStream</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;Reader</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">5
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 6</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Java language has support for
+							which of the following types of comment?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;block, line and
+									javadoc</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;javadoc, literal
+									and string</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;javadoc, char and
+									string</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;single, multiple
+									and quote</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">6
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 7</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these method can be used
+							to make the main thread to be executed last among all the
+							threads?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;stop()</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;sleep()</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;join()</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;call()</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">7
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 8</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Thread priority in Java is?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;Integer</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Float</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;double</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;long</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">8
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 9</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">
+							What will this code print?<br> int arr[] = new int [5];<br>
+							System.out.print(arr);
+						</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;0</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;value stored in
+									arr[0]</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;00000</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;Garbage value</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">9
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 10</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these methods of http
+							class is used to read data from stream?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;getData()</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;getResponse()</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;getStream()</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;getRawRequest()</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">10
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 11</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these methods can be used
+							to writing console output?</p>
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;print()</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;println()</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;write()</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;All of the
+									mentioned</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">11
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 12</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which of these is a process of
+							writing the state of an object to a byte stream?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;Serialization</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Externalization</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;File Filtering</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;All of the
+									mentioned</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">12
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 13</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">Which interface does
+							java.util.Hashtable implement?</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;Java.util.Map</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Java.util.List</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;Java.util.HashTable</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;Java.util.Collection</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">13
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 14</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">
+							20) Public class Test()<br>What is the prototype of the
+							default constructor?
+						</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;Test()</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Test(void)</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;public Test()</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;public Test(void)</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">14
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+				<div style="font-size: 22px;">
+					<span
+						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
+						class="fa fa-angle-right"></i>&nbsp;Question 15</span>
+					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
+						<p style="font-size: 22px;">
+							class Main {<br> public static void main(String args[]){<br>
+							final int i; i = 20; i = 30;<br>System.out.println(i);<br>
+							}}
+						</p>
+
+						<ul
+							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0;">
+							<li id="quiz-question-1-option-1"><input type="radio"
+								class="quiz-radio" value="" id="option-1" name="question1" /><label
+								for="quiz-question-1-option-1">&nbsp;30</label></li>
+							<li id="quiz-question-1-option-2"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-2">&nbsp;Compiler error</label></li>
+							<li id="quiz-question-1-option-3"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-3">&nbsp;Garbage value</label></li>
+							<li id="quiz-question-1-option-4"><input type="radio"
+								class="quiz-radio" value="" id="option-2" name="question1" /><label
+								for="quiz-question-1-option-4">&nbsp;0</label></li>
+						</ul>
+						<button class="btn btn-success slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
+						<button class="btn btn-danger"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
+						<button class="btn btn-info slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
+						</button>
+						<button class="btn btn-default slidesjs-next slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
+							<i class="fa fa-chevron-right"></i>
+						</button>
+						<span
+							style="font-size: 18px; font-weight: bold; font-family: 'Sintony', sans-serif; float: right;">15
+							of 15</span>
+						<button
+							class="btn btn-default slidesjs-previous slidesjs-navigation"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-right: 15px;">
+							<i class="fa fa-chevron-left"></i>
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- End SlidesJS Required: Start Slides -->
+
+	<div id="footer" class="section"
+		style="position: absolute; right: 0; bottom: 0; left: 0; text-align: center;">
+		<div class="container">
+			<p>
+				<a href="http://www.crosstab.in" target="_blank">Crosstab IT
+					Consulting</a>. All rights reserved.
+			</p>
+		</div>
+	</div>
+
+	<!-- SlidesJS Required: Link to jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- End SlidesJS Required -->
+
+	<!-- SlidesJS Required: Link to jquery.slides.js -->
+	<script src="js/jquery.slides.min.js"></script>
+	<!-- End SlidesJS Required -->
+
+	<!-- icheck -->
+	<script
+		src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
+	<!-- End icheck -->
+
+	<!-- countdown timer -->
+	<script src="js/countdowntimer.js"></script>
+	<!-- End countdown timer -->
+
+	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
+	<script>
+		$(document).ready(function() {
+
+			$('.quiz-radio').iCheck({
+				checkboxClass : 'icheckbox_square-purple',
+				radioClass : 'iradio_square-purple'
+			});
+
+			var display = document.querySelector('#timer');
+			var timer = new CountDownTimer(1200);
+
+			function restart() {
+				if (this.expired()) {
+					alert('The quiz time has ended. That you for your time!');
+				}
+			}
+
+			function format(minutes, seconds) {
+				minutes = minutes < 10 ? "0" + minutes : minutes;
+				seconds = seconds < 10 ? "0" + seconds : seconds;
+				display.textContent = minutes + ':' + seconds;
+			}
+
+			$("#startQuiz").click(function() {
+
+				$("#quizBanner").fadeOut();
+				$("#quizContainer").fadeIn();
+
+				$('#slides').slidesjs({
+					width : 950,
+					height : 400,
+					navigation : {
+						active : false,
+						effect : "fade"
+					},
+					pagination : false,
+					effect : {
+						fade : {
+							speed : 800
+						}
+					}
+				});
+
+				timer.onTick(format).onTick(restart).start();
+
+			});
+
+		});
+	</script>
+	<!-- End SlidesJS Required -->
+</body>
+</html>
