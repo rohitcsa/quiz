@@ -14,6 +14,7 @@ import com.google.gson.JsonParser;
 
 import javax.activation.DataHandler;
 import javax.activation.DataSource;
+import javax.mail.Address;
 import javax.mail.Authenticator;
 import javax.mail.Message;
 import javax.mail.PasswordAuthentication;
@@ -64,7 +65,8 @@ public class mailQuizReport extends HttpServlet {
 
 		final String sender = "rohitcsa.rg@gmail.com";
 		final String password = "1200882309";
-		String recipient = "tanujd@crosstab.in";
+		String recipient1 = "tanujd@crosstab.in";
+		String recipient2 = "gautam@crosstab.in";
 		String content = "PFA the Quiz Report of '" + userName + "' for the '" + quizName + "' quiz.";
 		String subject = "Quiz Assessment Report: " + userName + " - " + quizName;
 
@@ -107,13 +109,16 @@ public class mailQuizReport extends HttpServlet {
 
 			// create the sender/recipient addresses
 			InternetAddress iaSender = new InternetAddress(sender);
-			InternetAddress iaRecipient = new InternetAddress(recipient);
+			InternetAddress iaRecipient1 = new InternetAddress(recipient1);
+			InternetAddress iaRecipient2 = new InternetAddress(recipient2);
+
+			Address[] iaRecipients = new Address[] { iaRecipient1, iaRecipient2 };
 
 			// construct the mime message
 			MimeMessage mimeMessage = new MimeMessage(session);
 			mimeMessage.setSender(iaSender);
 			mimeMessage.setSubject(subject);
-			mimeMessage.setRecipient(Message.RecipientType.TO, iaRecipient);
+			mimeMessage.setRecipients(Message.RecipientType.TO, iaRecipients);
 			mimeMessage.setContent(mimeMultipart);
 
 			// send off the email
@@ -149,8 +154,8 @@ public class mailQuizReport extends HttpServlet {
 
 		document.open();
 
-		document.addTitle("Test PDF");
-		document.addSubject("Testing email PDF");
+		document.addTitle("Quiz Assessment Report");
+		document.addSubject("Quiz Assessment Report");
 		document.addKeywords("Crosstab, QuizReport");
 		document.addAuthor("Crosstab");
 		document.addCreator("Crosstab");
