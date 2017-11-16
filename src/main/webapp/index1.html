@@ -12,6 +12,7 @@
 <!-- CSS for slidesjs.com example -->
 <link rel="stylesheet" href="css/example.css">
 <!-- End CSS for slidesjs.com example -->
+<link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
@@ -137,21 +138,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 1</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Is Java a compiled or interpreted
-							language?</p>
+						<p id="q1" style="font-size: 22px;">Is Java a compiled or
+							interpreted language?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a1" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -171,21 +173,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 2</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is runtime polymorphism?</p>
-
+						<p id="q2" style="font-size: 22px;">What is runtime
+							polymorphism?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a2" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -205,22 +208,24 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 3</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Explain what is a Singleton Class
-							and how to achieve it in Java in a thread-safe way?</p>
+						<p id="q3" style="font-size: 22px;">Explain what is a
+							Singleton Class and how to achieve it in Java in a thread-safe
+							way?</p>
 
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a3" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -240,21 +245,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 4</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is method overloading and
-							method overriding?</p>
+						<p id="q4" style="font-size: 22px;">What is method overloading
+							and method overriding?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a4" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -274,21 +280,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 5</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Explain Java annotations and give
-							2 examples.</p>
+						<p id="q5" style="font-size: 22px;">Explain Java annotations
+							and give 2 examples.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a5" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -308,21 +315,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 6</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is difference between String,
-							StringBuilder and StringBuffer in Java?</p>
+						<p id="q6" style="font-size: 22px;">What is difference between
+							String, StringBuilder and StringBuffer in Java?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a6" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -342,21 +350,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 7</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is Final keyword in java at
-							variable, method and class level?</p>
+						<p id="q7" style="font-size: 22px;">What is Final keyword in
+							java at variable, method and class level?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a7" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -376,21 +385,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 8</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Explain Exception class hierarchy,
-							how can you create custom Exceptions in Java?</p>
+						<p id="q8" style="font-size: 22px;">Explain Exception class
+							hierarchy, how can you create custom Exceptions in Java?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a8" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -410,21 +420,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 9</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What are design patterns and
-							anti-patterns? Give an example for each and explain.</p>
+						<p id="q9" style="font-size: 22px;">What are design patterns
+							and anti-patterns? Give an example for each and explain.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a9" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -444,21 +455,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 10</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What are the new features in Java
-							8?</p>
+						<p id="q10" style="font-size: 22px;">What are the new features
+							in Java 8?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a10" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -478,21 +490,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 11</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is Java Generics feature?
-							What problem would it solve?</p>
+						<p id="q11" style="font-size: 22px;">What is Java Generics
+							feature? What problem would it solve?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a11" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -512,22 +525,23 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 12</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What’s the difference between
-							Object oriented programming and functional programming? Where
-							does Java 8 fit and why?</p>
+						<p id="q12" style="font-size: 22px;">What’s the difference
+							between Object oriented programming and functional programming?
+							Where does Java 8 fit and why?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a12" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -547,21 +561,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 13</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Name and explain different types
-							of SQL JOINS.</p>
+						<p id="q13" style="font-size: 22px;">Name and explain
+							different types of SQL JOINS.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a13" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -581,21 +596,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 14</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What are views in database? Why
-							are they used? What are the pros and cons of it?</p>
+						<p id="q14" style="font-size: 22px;">What are views in
+							database? Why are they used? What are the pros and cons of it?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a14" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -615,21 +631,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 15</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is pessimistic vs optimistic
-							lock in database context?</p>
+						<p id="q15" style="font-size: 22px;">What is pessimistic vs
+							optimistic lock in database context?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a15" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -649,20 +666,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 16</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is Java heap and Java stack?</p>
+						<p id="q16" style="font-size: 22px;">What is Java heap and
+							Java stack?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a16" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -682,21 +701,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 17</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is the difference between a
-							DOM parser and a SAX parser?</p>
+						<p id="q17" style="font-size: 22px;">What is the difference
+							between a DOM parser and a SAX parser?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a17" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -716,21 +736,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 18</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">What is the difference between DTD
-							and XML Schema?</p>
+						<p id="q18" style="font-size: 22px;">What is the difference
+							between DTD and XML Schema?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a18" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -750,21 +771,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 19</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Describe the observer pattern and
-							an example of how it would be use.</p>
+						<p id="q19" style="font-size: 22px;">Describe the observer
+							pattern and an example of how it would be use.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a19" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -784,21 +806,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 20</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">How do you do unit test? What
-							tools did you use?</p>
+						<p id="q20" style="font-size: 22px;">How do you do unit test?
+							What tools did you use?</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a20" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -818,20 +841,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 21</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Explain servlet life cycle.</p>
+						<p id="q21" style="font-size: 22px;">Explain servlet life
+							cycle.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea rows="5" cols="100" style="width: 100%;"
+							<textarea id="a21" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -851,21 +876,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 22</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Write a code to create deadlock
-							between two threads.</p>
+						<p id="q22" style="font-size: 22px;">Write a code to create
+							deadlock between two threads.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea id="code1" rows="5" cols="100" style="width: 100%;"
+							<textarea id="a22" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -885,21 +911,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 23</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Write code to demonstrate usage of
-							hashcode() and equals().</p>
+						<p id="q23" style="font-size: 22px;">Write code to demonstrate
+							usage of hashcode() and equals().</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea id="code2" rows="5" cols="100" style="width: 100%;"
+							<textarea id="a23" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -919,21 +946,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 24</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Solve producer-consumer problem
-							using threads in Java (wait()and notify()).</p>
+						<p id="q24" style="font-size: 22px;">Solve producer-consumer
+							problem using threads in Java (wait()and notify()).</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea id="code3" rows="5" cols="100" style="width: 100%;"
+							<textarea id="a24" rows="5" cols="100" style="width: 100%;"
 								placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -953,21 +981,22 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 25</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;">Write code to implement String
-							buffer class from scratch.</p>
+						<p id="q25" style="font-size: 22px;">Write code to implement
+							String buffer class from scratch.</p>
 						<div
 							style="list-style: none; margin-bottom: 30px; margin-top: 30px; padding: 0; font-size: 18px;">
-							<textarea id="code4" rows="5" cols="100" style="width: 100%;"
-								placeholder="<Type answer here>"></textarea>
+							<textarea id="a25" id="code4" rows="5" cols="100"
+								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button class="btn btn-success submitQuiz"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -1009,7 +1038,9 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 	<!-- End icheck -->
-
+	<!-- jquery UI -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- end jquery UI -->
 	<!-- countdown timer -->
 	<script src="js/countdowntimer.js"></script>
 	<!-- End countdown timer -->
@@ -1020,6 +1051,9 @@
 
 	<!-- SlidesJS Required: Initialize SlidesJS with a jQuery doc ready -->
 	<script>
+		var QA_Key = [];
+		var cm22, cm23, cm24, cm25;
+
 		$(document)
 				.ready(
 						function() {
@@ -1046,83 +1080,164 @@
 								display.textContent = minutes + ':' + seconds;
 							}
 
-							$("#startQuiz")
+							$("#startQuiz").click(
+									function() {
+
+										$("#quizBanner").fadeOut();
+										$("#quizContainer").fadeIn();
+
+										$('#slides').slidesjs({
+											width : 950,
+											height : 400,
+											navigation : {
+												active : false,
+												effect : "fade"
+											},
+											pagination : false,
+											effect : {
+												fade : {
+													speed : 800
+												}
+											}
+										});
+
+										cm22 = CodeMirror.fromTextArea(document
+												.getElementById("a22"), {
+											lineNumbers : false,
+											mode : "text/x-java",
+											matchBrackets : true
+										});
+
+										cm22.setSize('100%', 150);
+
+										cm23 = CodeMirror.fromTextArea(document
+												.getElementById("a23"), {
+											lineNumbers : false,
+											mode : "text/x-java",
+											matchBrackets : true
+										});
+
+										cm23.setSize('100%', 150);
+
+										cm24 = CodeMirror.fromTextArea(document
+												.getElementById("a24"), {
+											lineNumbers : false,
+											mode : "text/x-java",
+											matchBrackets : true
+										});
+
+										cm24.setSize('100%', 150);
+
+										cm25 = CodeMirror.fromTextArea(document
+												.getElementById("a25"), {
+											lineNumbers : false,
+											mode : "text/x-java",
+											matchBrackets : true
+										});
+
+										cm25.setSize('100%', 150);
+
+										timer.onTick(format).onTick(restart)
+												.start();
+
+									});
+
+							$(".submitQuiz")
 									.click(
 											function() {
 
-												$("#quizBanner").fadeOut();
-												$("#quizContainer").fadeIn();
-
-												$('#slides').slidesjs({
-													width : 950,
-													height : 400,
-													navigation : {
-														active : false,
-														effect : "fade"
-													},
-													pagination : false,
-													effect : {
-														fade : {
-															speed : 800
-														}
-													}
-												});
-
-												var cm1 = CodeMirror
-														.fromTextArea(
-																document
-																		.getElementById("code1"),
-																{
-																	lineNumbers : false,
-																	mode : "text/x-java",
-																	matchBrackets : true
-																});
-
-												cm1.setSize('100%', 150);
-
-												var cm2 = CodeMirror
-														.fromTextArea(
-																document
-																		.getElementById("code2"),
-																{
-																	lineNumbers : false,
-																	mode : "text/x-java",
-																	matchBrackets : true
-																});
-
-												cm2.setSize('100%', 150);
-
-												var cm3 = CodeMirror
-														.fromTextArea(
-																document
-																		.getElementById("code3"),
-																{
-																	lineNumbers : false,
-																	mode : "text/x-java",
-																	matchBrackets : true
-																});
-
-												cm3.setSize('100%', 150);
-
-												var cm4 = CodeMirror
-														.fromTextArea(
-																document
-																		.getElementById("code4"),
-																{
-																	lineNumbers : false,
-																	mode : "text/x-java",
-																	matchBrackets : true
-																});
-
-												cm4.setSize('100%', 150);
-
-												timer.onTick(format).onTick(
-														restart).start();
+												ConfirmDialog('Are you sure you want to end your attempt & submit the quiz?');
 
 											});
-
 						});
 	</script>
-	<!-- End SlidesJS Required -->
+	<script>
+		function mail_QA_Key() {
+
+			var QAcount = 25;
+			for (i = 1; i <= QAcount; i++) {
+
+				var q_no = 'q' + i.toString();
+				var a_no = 'a' + i.toString();
+
+				qaItem = {};
+				qaItem["question"] = $('#' + q_no).text().replace(/\s+/g, " ");
+
+				if ((i > 21) && (i < 26)) {
+
+					if (i === 22) {
+						qaItem["answer"] = cm22.getValue();
+					} else if (i === 23) {
+						qaItem["answer"] = cm23.getValue();
+					} else if (i === 24) {
+						qaItem["answer"] = cm24.getValue();
+					} else if (i === 25) {
+						qaItem["answer"] = cm25.getValue();
+					}
+
+				} else {
+					qaItem["answer"] = $('#' + a_no).val();
+				}
+
+				QA_Key.push(qaItem);
+
+			}
+			console.log(QA_Key);
+			console.log(JSON.stringify(QA_Key));
+
+			var jsonDataArr = [];
+
+			$.ajax({
+				url : "mailQuizReport",
+				type : "POST",
+				data : {
+					user_name : 'Tanuj Dhaundiyal',
+					quiz_name : 'Software Engineer (Level P2)',
+					QA_Key : JSON.stringify(QA_Key)
+				},
+				success : function(res) {
+
+				}
+			});
+		}
+	</script>
+	<script>
+		function ConfirmDialog(message) {
+			$('<div></div>')
+					.appendTo('body')
+					.html('<div><h6>' + message + '?</h6></div>')
+					.dialog(
+							{
+								modal : true,
+								title : 'Delete message',
+								zIndex : 10000,
+								autoOpen : true,
+								width : 'auto',
+								resizable : false,
+								buttons : {
+									Yes : function() {
+										// $(obj).removeAttr('onclick');                                
+										// $(obj).parents('.Parent').remove();
+
+										mail_QA_Key();
+
+										$(this).dialog("close");
+
+										$(
+												"<div>Thanks for your response. We'll get in touch with you soon.</div>")
+												.dialog();
+
+									},
+									No : function() {
+
+										$(this).dialog("close");
+									}
+								},
+								close : function(event, ui) {
+									$(this).remove();
+								}
+							});
+		};
+	</script>
 </body>
 </html>

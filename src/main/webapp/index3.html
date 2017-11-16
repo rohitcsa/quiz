@@ -12,6 +12,7 @@
 <!-- CSS for slidesjs.com example -->
 <link rel="stylesheet" href="css/example.css">
 <!-- End CSS for slidesjs.com example -->
+<link rel="stylesheet" href="css/jquery-ui.css">
 <link rel="stylesheet"
 	href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet"
@@ -145,14 +146,15 @@
 							<textarea id="a1" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -172,7 +174,7 @@
 						style="color: darkslategray; font-size: 30px; font-weight: bold;"><i
 						class="fa fa-angle-right"></i>&nbsp;Question 2</span>
 					<div style="background: #F0F0F0; margin-top: 10px; padding: 20px;">
-						<p style="font-size: 22px;" id="q2">2) What is RESTful web
+						<p style="font-size: 22px;" id="q2">What is RESTful web
 							service? How is it different from SOAP based web services? Design
 							a RESTful calculator app. Write test cases to test this app.</p>
 						<div
@@ -180,14 +182,15 @@
 							<textarea id="a2" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -214,14 +217,15 @@
 							<textarea id="a3" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -248,14 +252,15 @@
 							<textarea id="a4" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -282,14 +287,15 @@
 							<textarea id="a5" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -316,14 +322,15 @@
 							<textarea id="a6" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -351,14 +358,15 @@
 							<textarea id="a7" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -385,14 +393,15 @@
 							<textarea id="a8" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -420,14 +429,15 @@
 							<textarea id="a9" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -454,14 +464,15 @@
 							<textarea id="a10" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -489,14 +500,15 @@
 							<textarea id="a11" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -523,14 +535,15 @@
 							<textarea id="a12" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -557,14 +570,15 @@
 							<textarea id="a13" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -592,14 +606,15 @@
 							<textarea id="a14" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -626,14 +641,15 @@
 							<textarea id="a15" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -660,14 +676,15 @@
 							<textarea id="a16" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -695,14 +712,15 @@
 							<textarea id="a17" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -729,14 +747,15 @@
 							<textarea id="a18" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -763,14 +782,15 @@
 							<textarea id="a19" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -797,14 +817,15 @@
 							<textarea id="a20" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -832,14 +853,15 @@
 							<textarea id="a21" class="answer" rows="5" cols="100"
 								style="width: 100%;" placeholder="<Type answer here>"></textarea>
 						</div>
-						<button class="btn btn-success slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Submit</button>
 						<button class="btn btn-danger"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif;">Clear</button>
 						<button class="btn btn-info slidesjs-next slidesjs-navigation"
-							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">
+							style="font-size: 15px; font-family: 'Sintony', sans-serif;">
 							Skip&nbsp;&nbsp;<i class="fa fa-angle-right"></i>
 						</button>
+						<button id="submitQuiz" class="btn btn-success"
+							style="font-size: 15px; font-family: 'Sintony', sans-serif; margin-left: 20px;">Submit
+							Quiz</button>
 						<button class="btn btn-default slidesjs-next slidesjs-navigation"
 							style="font-size: 15px; font-family: 'Sintony', sans-serif; float: right; margin-left: 15px;">
 							<i class="fa fa-chevron-right"></i>
@@ -881,7 +903,9 @@
 	<script
 		src="https://cdnjs.cloudflare.com/ajax/libs/iCheck/1.0.2/icheck.min.js"></script>
 	<!-- End icheck -->
-
+	<!-- jquery UI -->
+	<script src="js/jquery-ui.min.js"></script>
+	<!-- end jquery UI -->
 	<!-- countdown timer -->
 	<script src="js/countdowntimer.js"></script>
 	<!-- End countdown timer -->
@@ -894,59 +918,69 @@
 	<script>
 		var QA_Key = [];
 
-		$(document).ready(function() {
+		$(document)
+				.ready(
+						function() {
 
-			$('.quiz-radio').iCheck({
-				checkboxClass : 'icheckbox_square-purple',
-				radioClass : 'iradio_square-purple'
-			});
+							$('.quiz-radio').iCheck({
+								checkboxClass : 'icheckbox_square-purple',
+								radioClass : 'iradio_square-purple'
+							});
 
-			var display = document.querySelector('#timer');
-			var timer = new CountDownTimer(2400);
+							var display = document.querySelector('#timer');
+							var timer = new CountDownTimer(2400);
 
-			function restart() {
-				if (this.expired()) {
-					alert('The quiz time has ended. That you for your time!');
-				}
-			}
+							function restart() {
+								if (this.expired()) {
+									alert('The quiz time has ended. That you for your time!');
+								}
+							}
 
-			function format(minutes, seconds) {
-				minutes = minutes < 10 ? "0" + minutes : minutes;
-				seconds = seconds < 10 ? "0" + seconds : seconds;
-				display.textContent = minutes + ':' + seconds;
-			}
+							function format(minutes, seconds) {
+								minutes = minutes < 10 ? "0" + minutes
+										: minutes;
+								seconds = seconds < 10 ? "0" + seconds
+										: seconds;
+								display.textContent = minutes + ':' + seconds;
+							}
 
-			$("#startQuiz").click(function() {
+							$("#startQuiz").click(function() {
 
-				$("#quizBanner").fadeOut();
-				$("#quizContainer").fadeIn();
+								$("#quizBanner").fadeOut();
+								$("#quizContainer").fadeIn();
 
-				$('#slides').slidesjs({
-					width : 950,
-					height : 400,
-					navigation : {
-						active : false,
-						effect : "fade"
-					},
-					pagination : false,
-					effect : {
-						fade : {
-							speed : 800
-						}
-					}
-				});
+								$('#slides').slidesjs({
+									width : 950,
+									height : 400,
+									navigation : {
+										active : false,
+										effect : "fade"
+									},
+									pagination : false,
+									effect : {
+										fade : {
+											speed : 800
+										}
+									}
+								});
 
-				timer.onTick(format).onTick(restart).start();
+								timer.onTick(format).onTick(restart).start();
 
-				createKey();
+							});
 
-			});
+							$("#submitQuiz")
+									.click(
+											function() {
 
-		});
+												ConfirmDialog('Are you sure you want to end your attempt & submit the quiz?');
+
+											});
+
+						});
 	</script>
 
 	<script>
-		function createKey() {
+		function mail_QA_Key() {
 
 			var QAcount = 21;
 			for (i = 1; i <= QAcount; i++) {
@@ -955,8 +989,8 @@
 				var a_no = 'a' + i.toString();
 
 				qaItem = {};
-				qaItem["question"] = $('#' + q_no).text();
-				qaItem["answer"] = $('#' + a_no).text();
+				qaItem["question"] = $('#' + q_no).text().replace(/\s+/g, " ");
+				qaItem["answer"] = $('#' + a_no).val();
 
 				QA_Key.push(qaItem);
 
@@ -970,8 +1004,8 @@
 				url : "mailQuizReport",
 				type : "POST",
 				data : {
-					user_name : 'User Name',
-					quiz_name : 'Quiz Name',
+					user_name : 'Tanuj Dhaundiyal',
+					quiz_name : 'Techinical Lead (Level P4)',
 					QA_Key : JSON.stringify(QA_Key)
 				},
 				success : function(res) {
@@ -980,6 +1014,43 @@
 			});
 		}
 	</script>
-	<!-- End SlidesJS Required -->
+	<script>
+		function ConfirmDialog(message) {
+			$('<div></div>')
+					.appendTo('body')
+					.html('<div><h6>' + message + '?</h6></div>')
+					.dialog(
+							{
+								modal : true,
+								title : 'Delete message',
+								zIndex : 10000,
+								autoOpen : true,
+								width : 'auto',
+								resizable : false,
+								buttons : {
+									Yes : function() {
+										// $(obj).removeAttr('onclick');                                
+										// $(obj).parents('.Parent').remove();
+
+										mail_QA_Key();
+
+										$(this).dialog("close");
+
+										$(
+												"<div>Thanks for your response. We'll get in touch with you soon.</div>")
+												.dialog();
+
+									},
+									No : function() {
+
+										$(this).dialog("close");
+									}
+								},
+								close : function(event, ui) {
+									$(this).remove();
+								}
+							});
+		};
+	</script>
 </body>
 </html>
